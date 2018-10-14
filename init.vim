@@ -142,8 +142,7 @@ set background=dark
 " let g:airline_theme='wombat'
 
 " Font
-set guifont=Consolas\ Regular:h16
-
+"set guifont=Consolas\ Regular:h16
 " }
 
 " Key Map {
