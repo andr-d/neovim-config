@@ -24,7 +24,7 @@ Plug 'xolox/vim-misc'
 " Ack
 Plug 'mileszs/ack.vim'
 
-" indentline
+" indentline - display the indention levels with thin vertical lines
 Plug 'Yggdroot/indentLine'
 
 " easytags
@@ -48,6 +48,15 @@ Plug 'terryma/vim-multiple-cursors'
 
 " Startify
 Plug 'mhinz/vim-startify'
+
+" Ack
+Plug 'mileszs/ack.vim'
+
+" Surround
+Plug 'tpope/vim-surround'
+
+" Repeat
+Plug 'tpope/vim-repeat'
 
 " Install Plugins
 call plug#end()
@@ -105,7 +114,7 @@ set wildmenu wildmode=full
 " markdown
 let g:vim_markdown_folding_disabled = 1
 
-" Ag 
+" use Ag instead of Ack for ack.vim
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
 " Colors 
@@ -177,6 +186,12 @@ nnoremap <leader>il :source $MYVIMRC<CR>
 " CtrlP
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+
+" Search with Ack/Ag
+nnoremap <Leader>a :Ack!<Space>
+
+" Add file types
+autocmd BufNewFile,BufRead *.bdy,*.spc,*.bdy,*.vw set syntax=sql
 
 " }
 
