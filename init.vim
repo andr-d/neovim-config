@@ -113,6 +113,7 @@ set wildmenu wildmode=full
 
 " markdown
 let g:vim_markdown_folding_disabled = 1
+let g:vim_markdown_conceal = 0
 
 " use Ag instead of Ack for ack.vim
 let g:ackprg = 'ag --nogroup --nocolor --column'
